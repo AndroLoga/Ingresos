@@ -93,22 +93,29 @@ header h1 {
 
 header address {
     float: left;
-    font-size: 75%;
+    font-size: 65%;
     font-style: normal;
     line-height: 1.25;
     margin: 0 1em 1em 0;
 }
 
-header span,
-header img {
+header span{
     display: block;
-    float: right;
+    float: left;
     margin: 0 0 1em 1em;
     max-height: 25%;
     max-width: 60%;
     position: relative;
 }
 
+header img {
+    display: block;
+    float: right;
+    margin: 0 0 1em 8em;
+    max-height: 25%;
+    max-width: 60%;
+    position: relative;
+}
 header img {
     max-height: 100%;
     max-width: 100%;
@@ -130,7 +137,7 @@ article,
 article address,
 table.meta,
 table.inventory {
-    margin: 0 0 3em;
+    margin: 0 0 1em;
     clear: both;
 }
 
@@ -140,19 +147,18 @@ article:after {
     clear: both;
 }
 
-article h1 {
-    clip: rect(0 0 0 0);
-    position: absolute;
+table.meta {
+    float: left;
+    width: 36%;
+   font-size: 75%; table-layout: fixed; width: 100%; 
+border-collapse: separate; border-spacing: 2px; }
+th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: left; }
+th, td { border-radius: 0.25em; border-style: solid; }
 }
 
-article address {
-    float: left;
-    font-size: 125%;
-    font-weight: bold;
-}
 
 /* table meta & balance */
-table.meta,
+
 table.balance {
     float: right;
     width: 36%;
@@ -165,13 +171,23 @@ table.balance:after {
     clear: both;
 }
 
+table.balance th {
+    font-weight: bold;
+    text-align: right;
+}
 /* table meta */
 table.meta th {
     width: 40%;
+    height: 300%;
+    font-weight: bold;
+    border-width: 1px; padding: 0.5em; position: relative; text-align: left;
 }
 
 table.meta td {
-    width: 60%;
+    width: 40%;
+    height: 300%;
+     text-align: center;
+    border-radius: 0.25em; border-style: solid;
 }
 
 /* table items */
